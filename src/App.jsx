@@ -40,19 +40,6 @@ export default function App() {
             alt="Central"
             className="w-full h-auto mt-8 px-4"
           />
-          <div className="w-full flex items-center justify-between px-8 mt-4 text-xs tracking-wider uppercase">
-            <div className="flex items-center gap-2">
-              <a href="#" className="bg-neutral-900 text-white px-3 py-1 rounded-full hover:bg-neutral-700 transition-colors">Licensing</a>
-              <a href="#" className="bg-neutral-900 text-white px-3 py-1 rounded-full hover:bg-neutral-700 transition-colors">T&Cs</a>
-              <a href="#" className="bg-neutral-900 text-white px-3 py-1 rounded-full hover:bg-neutral-700 transition-colors">Privacy</a>
-              <a href="#" className="bg-neutral-900 text-white px-3 py-1 rounded-full hover:bg-neutral-700 transition-colors">Cookies</a>
-            </div>
-            <p className="text-neutral-500">&copy; {new Date().getFullYear()} Central</p>
-            <div className="flex items-center gap-2 text-neutral-500">
-              <span>Created by</span>
-              <span className="bg-purple-600 text-white px-3 py-1 rounded-full">Kofi</span>
-            </div>
-          </div>
         </footer>
       </div>
     </div>
