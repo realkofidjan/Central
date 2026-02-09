@@ -440,6 +440,12 @@
   top: -2px;
 }
 
+@media screen and (max-width: 767px) {
+  .marquee__separator {
+    top: -3px;
+  }
+}
+
 @keyframes marquee-scroll {
   0% {
     transform: translateX(0);
