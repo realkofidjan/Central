@@ -85,7 +85,7 @@ export default function Navbar() {
         </button>
 
         <a href="/" className="navbar__logo">
-          <span className="navbar__asterisk" ref={asteriskRef}>✳</span>
+          <span className="navbar__asterisk" ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span>
           <img src={centralLogo} alt="Central" className="navbar__wordmark" ref={logoRef} />
         </a>
 
