@@ -172,7 +172,7 @@ export default function Navbar() {
         <div className="marquee__track">
           {marqueeItems.map((_, i) => (
             <span key={i} className="marquee__item">
-              {marqueeText} <span className="navbar__asterisk" ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span>
+              {marqueeText} <span className="marquee__separator"><span ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span></span>
             </span>
           ))}
         </div>
