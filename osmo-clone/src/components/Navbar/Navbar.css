@@ -377,22 +377,6 @@
   margin-left: 0;
 }
 
-/* Overlay dim */
-.navbar__overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 998;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.navbar__overlay--visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 /* Marquee banner */
 .marquee {
   position: fixed;
@@ -438,12 +422,6 @@
   line-height: 0;
   position: relative;
   top: -2px;
-}
-
-@media screen and (max-width: 767px) {
-  .marquee__separator {
-    top: -3px;
-  }
 }
 
 @keyframes marquee-scroll {
