@@ -85,7 +85,7 @@ export default function Navbar() {
         </button>
 
         <a href="/" className="navbar__logo">
-          <span className="navbar__asterisk" ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳</span>
+          <span className="navbar__asterisk" ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span>
           <img src={centralLogo} alt="Central" className="navbar__wordmark" ref={logoRef} />
         </a>
 
@@ -172,7 +172,7 @@ export default function Navbar() {
         <div className="marquee__track">
           {marqueeItems.map((_, i) => (
             <span key={i} className="marquee__item">
-              {marqueeText} <span className="marquee__separator"><span ref={asteriskRef} style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span></span>
+              {marqueeText} <span className="marquee__separator"><span style={{ fontFamily: 'inherit', textEmphasis: 'none' }}>✳&#xFE0E;</span></span>
             </span>
           ))}
         </div>

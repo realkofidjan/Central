@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import WavePathSection from './components/sections/WavePathSection';
+import TestimonialsSection from './components/sections/TestimonialsSection';
 import { AnimatedGridPattern } from './components/ui/animated-grid-pattern';
 import centralLogoFooter from './assets/central_logo_footer.png';
 
@@ -16,8 +17,9 @@ export default function App() {
       <div className="relative z-10">
         <Navbar />
         <WavePathSection />
+        <TestimonialsSection />
         <footer className="w-full py-16 flex flex-col items-center gap-5" >
-          <h2 className="text-2xl font-semibold" style={{ color: 'rgba(0, 0, 0, 0.85)' }}>ResumeGPT</h2>
+          <h2 className="text-2xl font-semibold" style={{ color: 'rgba(0, 0, 0, 0.85)' }}>Central</h2>
           <p className="text-center text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(0, 0, 0, 0.49)' }}>
             AI-powered resume builder for modern professionals. Create stunning resumes optimized for ATS systems.
           </p>

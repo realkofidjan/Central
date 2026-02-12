@@ -1,5 +1,13 @@
+import { motion } from 'framer-motion';
 import { WavePath } from '../ui/wave-path';
 import { cn } from '../../lib/utils';
+
+const heroLines = [
+  'A digital holding company operating technology-driven businesses across finance, software, design, and the built environment.'
+];
+const heroLines2 = [
+  'Each subsidiary operates independently — powered by shared systems, strategy, and vision.'
+];
 
 export default function WavePathSection() {
   return (
@@ -19,9 +27,41 @@ export default function WavePathSection() {
         <WavePath className="mb-10" />
         <div className="flex w-full flex-col items-center text-center">
           <br />
-          <p className="text-black/80 mt-4 max-w-2xl text-2xl md:text-4xl">
-            Connecting businesses across continents. Building the future of unified enterprise management.
-          </p>
+          <div className="mt-4 max-w-4xl">
+            {heroLines.map((line, i) => (
+              <motion.p
+                key={i}
+                className="text-black/80 text-2xl md:text-3xl"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.6 + i * 0.4,
+                  ease: [0.25, 0.1, 0.25, 1],
+                }}
+              >
+                {line}
+              </motion.p>
+            ))}
+
+            <br />
+            {heroLines2.map((line, i) => (
+              // smaller muted style
+              <motion.p
+                key={i}
+                className="text-black/50 text-xs md:text-sm"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.6 + i * 0.4,
+                  ease: [0.25, 0.1, 0.25, 1],
+                }}
+              >
+                {line}
+              </motion.p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
